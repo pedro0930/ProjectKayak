@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkout</title>
+</head>
+<body>
+	<h2>Thank you for your business!</h2>
+	<p>We charged your credit card for {{request.session.subTotal}}.</p>
+	<p>You have ordered {{request.session.bought}} so far and spent {{request.session.total}} with Amadon.com!</p>
+
+	<a href="/">Capitalism, Ho!</a>
+</body>
+</html>

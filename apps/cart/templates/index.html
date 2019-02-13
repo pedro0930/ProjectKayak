@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Club Site Sample</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</head>
+<body>
+	<div>
+		<p>Picture upload test</p>
+		<form method="post" enctype="multipart/form-data" action='model_form_upload'>
+		    {% csrf_token %}
+		    <label>Description</label>
+		    <input type='text' name='description' value=''>
+		    <input type='file' name='document' value=''>
+	    	<button type="submit">Upload</button>
+		</form>
+	</div>
+	<div>
+		<nav class="nav d-flex justify-content-between bg-primary">
+	      <a class="p-2 text-warning" href="#">Home</a>
+	      <a class="p-2 text-white" href="#">Calendar</a>
+	      <a class="p-2 text-white" href="#">Activities</a>
+	      <a class="p-2 text-white" href="#">Trip Planning</a>
+	      <a class="p-2 text-white" href="#">Tools</a>
+	      <a class="p-2 text-white" href="#">Membership</a>
+	      <a class="p-2 text-white" href="#">Newsletter</a>
+	      <a class="p-2 text-white" href="#">Photos</a>
+	      <a class="p-2 text-white" href="#">Club Library</a>
+	      <a class="p-2 text-white" href="#">Ads</a>
+	      <a class="p-2 text-white" href="#">Sponsors</a>
+	    </nav>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-8">
+				<div class="container">
+				  <div class="row">
+				    <div class="col">
+				    	<img src="http://holeinthewallpaddlingclub.org/wp-content/plugins/radykal-fancy-gallery/admin/timthumb.php?src=http%3A%2F%2Fholeinthewallpaddlingclub.org%2Fwp-content%2Ffancygallery%2F1%2F1%2Fhitw-10.jpg&w=186&h=160&zc=1&q=100">
+				    </div>
+				    <div class="col">
+				    	<img src="http://holeinthewallpaddlingclub.org/wp-content/plugins/radykal-fancy-gallery/admin/timthumb.php?src=http%3A%2F%2Fholeinthewallpaddlingclub.org%2Fwp-content%2Ffancygallery%2F1%2F1%2Fhitw-1.jpg&w=186&h=160&zc=1&q=100">
+				    </div>
+				    <div class="col">
+				    	<img src="http://holeinthewallpaddlingclub.org/wp-content/plugins/radykal-fancy-gallery/admin/timthumb.php?src=http%3A%2F%2Fholeinthewallpaddlingclub.org%2Fwp-content%2Ffancygallery%2F1%2F1%2Fhitw-7.jpg&w=186&h=160&zc=1&q=100">
+				    </div>
+				  </div>
+				  <div class="row">
+				    <div class="col">
+				    	<img src="http://holeinthewallpaddlingclub.org/wp-content/plugins/radykal-fancy-gallery/admin/timthumb.php?src=http%3A%2F%2Fholeinthewallpaddlingclub.org%2Fwp-content%2Ffancygallery%2F1%2F1%2Fhitw-3.jpg&w=186&h=160&zc=1&q=100">
+				    </div>
+				    <div class="col">
+				    	<img src="http://holeinthewallpaddlingclub.org/wp-content/plugins/radykal-fancy-gallery/admin/timthumb.php?src=http%3A%2F%2Fholeinthewallpaddlingclub.org%2Fwp-content%2Ffancygallery%2F1%2F1%2Fhitw-4.jpg&w=186&h=160&zc=1&q=100">
+				    </div>
+				    <div class="col">
+				    	<img src="http://holeinthewallpaddlingclub.org/wp-content/plugins/radykal-fancy-gallery/admin/timthumb.php?src=http%3A%2F%2Fholeinthewallpaddlingclub.org%2Fwp-content%2Ffancygallery%2F1%2F1%2Fhitw-5.jpg&w=186&h=160&zc=1&q=100">
+				    </div>
+				  </div>
+				  	<div class="row">
+				    <div class="col">
+				    	<img src="http://holeinthewallpaddlingclub.org/wp-content/plugins/radykal-fancy-gallery/admin/timthumb.php?src=http%3A%2F%2Fholeinthewallpaddlingclub.org%2Fwp-content%2Ffancygallery%2F1%2F1%2Fhitw-2.jpg&w=186&h=160&zc=1&q=100">
+				    </div>
+				    <div class="col">
+				    	<img src="http://holeinthewallpaddlingclub.org/wp-content/plugins/radykal-fancy-gallery/admin/timthumb.php?src=http%3A%2F%2Fholeinthewallpaddlingclub.org%2Fwp-content%2Ffancygallery%2F1%2F1%2Fhitw-6.jpg&w=186&h=160&zc=1&q=100">
+				    </div>
+				    <div class="col">
+				    	<img src="http://holeinthewallpaddlingclub.org/wp-content/plugins/radykal-fancy-gallery/admin/timthumb.php?src=http%3A%2F%2Fholeinthewallpaddlingclub.org%2Fwp-content%2Ffancygallery%2F1%2F1%2Fhitw-8.jpg&w=186&h=160&zc=1&q=100">
+				    </div>
+				  </div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div>
+					<h2>Welcome to Hole in the Wall Paddling Club.</h2>
+					<p>
+						We are a non-profit kayaking organization based in Anacortes, WA run entirely by volunteer members like you.  We offer training sessions, day paddles, and extended overnight camping trips all over the Puget Sound including the coast.
+
+						Be sure to check out the calendar for upcoming events.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<h1 class="text-center">
+				Our Mission
+			</h1>
+			<h3 class="text-center">	
+				To encourage safe kayaking, stress the importance of training in kayaking skills and safety, protect the environment and have fun.
+			</h3>
+		</div>
+	</div>
+</body>
+</html>
